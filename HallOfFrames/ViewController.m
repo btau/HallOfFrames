@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Picture.h"
+#import "PictureCollectionViewCell.h"
 
 @interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -27,6 +28,8 @@
     Picture *picFive = [[Picture alloc]initWithImage:[UIImage imageNamed:@"willFarrell"] andFrameColor:[UIColor blackColor]];
     
     self.pictures = [NSArray arrayWithObjects:picOne, picTwo, picThree, picFour, picFive, nil];
+
+    
 }
 
 
@@ -36,10 +39,9 @@
 
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellID" forIndexPath:[NSIndexPath indexPathWithIndex:indexPath.row]];
-//    Picture *pic = [self.pictures objectAtIndex:indexPath.row];
-
-    
+    PictureCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellID" forIndexPath:indexPath];
+    Picture *pic = [self.pictures objectAtIndex:indexPath.row];
+    cell.imageView.image = pic.image;
     return cell;
 }
 

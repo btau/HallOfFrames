@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wQ3-Q3-HFC">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wQ3-Q3-HFC">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="voZ-mK-CiU">
                                     <size key="itemSize" width="593" height="597"/>
@@ -34,27 +33,24 @@
                                             <rect key="frame" x="0.0" y="0.0" width="593" height="597"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uBv-zu-fj6">
-                                                    <rect key="frame" x="184" y="190" width="225" height="217"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ernieBanks" translatesAutoresizingMaskIntoConstraints="NO" id="uBv-zu-fj6">
+                                                    <rect key="frame" x="74" y="80" width="444" height="437"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <connections>
+                                            <outlet property="imageView" destination="uBv-zu-fj6" id="qRa-Wh-dT4"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="bvx-yH-RIP"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="p1d-uM-utg"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="RYf-Lw-l1V"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="TfR-Yh-FMK"/>
                                 </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="wQ3-Q3-HFC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="3HT-3T-BBA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wQ3-Q3-HFC" secondAttribute="trailing" constant="-20" id="MWc-wZ-pWr"/>
-                            <constraint firstItem="wQ3-Q3-HFC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Mee-l0-ldO"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wQ3-Q3-HFC" secondAttribute="bottom" id="yAg-jo-0bl"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -62,4 +58,7 @@
             <point key="canvasLocation" x="205" y="346"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ernieBanks" width="403" height="545"/>
+    </resources>
 </document>
