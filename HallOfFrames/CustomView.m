@@ -18,4 +18,10 @@
 }
 */
 
+- (IBAction)onButtonTapped:(UIButton *)sender {
+    [self.delegate pictureCollectionViewCell:self didTapButton:sender];
+}
+
+
+
 @end

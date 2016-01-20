@@ -9,8 +9,9 @@
 #import "ViewController.h"
 #import "Picture.h"
 #import "PictureCollectionViewCell.h"
+#import "CustomView.h"
 
-@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate, CustomViewDelegate>
 
 @property NSArray *pictures;
 
@@ -46,5 +47,14 @@
 }
 
 
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    self.view = [[[NSBundle mainBundle]loadNibNamed:@"CustomizationView" owner:self options:nil] objectAtIndex:indexPath.row];
+    
+}
+
+
+-(void)pictureCollectionViewCell:(id)cell didTapButton:(UIButton *)button {
+    
+}
 
 @end
