@@ -36,9 +36,12 @@
 
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
-}
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellID" forIndexPath:[NSIndexPath indexPathWithIndex:indexPath.row]];
+//    Picture *pic = [self.pictures objectAtIndex:indexPath.row];
 
+    
+    return cell;
+}
 
 
 
