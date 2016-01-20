@@ -17,6 +17,8 @@
 		0D9F94E61C501E8C000C5E53 /* HallOfFramesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F94E51C501E8C000C5E53 /* HallOfFramesUITests.m */; };
 		0D9F94F51C502149000C5E53 /* PictureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F94F41C502149000C5E53 /* PictureCollectionViewCell.m */; };
 		0D9F94F81C5022C1000C5E53 /* Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F94F71C5022C1000C5E53 /* Picture.m */; };
+		0D9F94FF1C503E80000C5E53 /* CustomizationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D9F94FE1C503E80000C5E53 /* CustomizationView.xib */; };
+		0D9F95021C503E8E000C5E53 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F95011C503E8E000C5E53 /* CustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,9 @@
 		0D9F94F41C502149000C5E53 /* PictureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureCollectionViewCell.m; sourceTree = "<group>"; };
 		0D9F94F61C5022C1000C5E53 /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Picture.h; sourceTree = "<group>"; };
 		0D9F94F71C5022C1000C5E53 /* Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Picture.m; sourceTree = "<group>"; };
+		0D9F94FE1C503E80000C5E53 /* CustomizationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomizationView.xib; sourceTree = "<group>"; };
+		0D9F95001C503E8E000C5E53 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		0D9F95011C503E8E000C5E53 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +117,9 @@
 				0D9F94C61C501E8B000C5E53 /* ViewController.h */,
 				0D9F94C71C501E8B000C5E53 /* ViewController.m */,
 				0D9F94C91C501E8B000C5E53 /* Main.storyboard */,
+				0D9F94FE1C503E80000C5E53 /* CustomizationView.xib */,
+				0D9F95001C503E8E000C5E53 /* CustomView.h */,
+				0D9F95011C503E8E000C5E53 /* CustomView.m */,
 				0D9F94F31C502149000C5E53 /* PictureCollectionViewCell.h */,
 				0D9F94F41C502149000C5E53 /* PictureCollectionViewCell.m */,
 				0D9F94F61C5022C1000C5E53 /* Picture.h */,
@@ -255,6 +263,7 @@
 			files = (
 				0D9F94D01C501E8B000C5E53 /* LaunchScreen.storyboard in Resources */,
 				0D9F94CD1C501E8B000C5E53 /* Assets.xcassets in Resources */,
+				0D9F94FF1C503E80000C5E53 /* CustomizationView.xib in Resources */,
 				0D9F94CB1C501E8B000C5E53 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +294,7 @@
 				0D9F94F51C502149000C5E53 /* PictureCollectionViewCell.m in Sources */,
 				0D9F94C51C501E8B000C5E53 /* AppDelegate.m in Sources */,
 				0D9F94C21C501E8B000C5E53 /* main.m in Sources */,
+				0D9F95021C503E8E000C5E53 /* CustomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +520,7 @@
 				0D9F94EC1C501E8C000C5E53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D9F94ED1C501E8C000C5E53 /* Build configuration list for PBXNativeTarget "HallOfFramesTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +529,7 @@
 				0D9F94EF1C501E8C000C5E53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D9F94F01C501E8C000C5E53 /* Build configuration list for PBXNativeTarget "HallOfFramesUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +538,7 @@
 				0D9F94F21C501E8C000C5E53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

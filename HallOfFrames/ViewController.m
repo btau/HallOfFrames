@@ -25,7 +25,7 @@
     Picture *picTwo = [[Picture alloc]initWithImage:[UIImage imageNamed:@"ronSanto"] andFrameColor:[UIColor blackColor]];
     Picture *picThree = [[Picture alloc]initWithImage:[UIImage imageNamed:@"ryneSandberg"] andFrameColor:[UIColor blackColor]];
     Picture *picFour = [[Picture alloc]initWithImage:[UIImage imageNamed:@"sammySosa"] andFrameColor:[UIColor blackColor]];
-    Picture *picFive = [[Picture alloc]initWithImage:[UIImage imageNamed:@"willFarrell"] andFrameColor:[UIColor blackColor]];
+    Picture *picFive = [[Picture alloc]initWithImage:[UIImage imageNamed:@"willFerrell"] andFrameColor:[UIColor blackColor]];
     
     self.pictures = [NSArray arrayWithObjects:picOne, picTwo, picThree, picFour, picFive, nil];
 
