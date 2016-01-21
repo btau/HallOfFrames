@@ -8,18 +8,21 @@
 
 #import "CustomView.h"
 
+@interface CustomView ()
+
+@property float red;
+@property float green;
+@property float blue;
+
+@end
+
 @implementation CustomView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
-- (IBAction)onButtonTapped:(UIButton *)sender {
-    [self.delegate pictureCollectionViewCell:self didTapButton:sender];
+- (IBAction)onButtonTapped:(UIButton *)button {
+    self.backgroundColor = [UIColor colorWithRed:self.red green:self.green blue:self.blue alpha:1.0];
+    [self.delegate customView:self didTapButton:button];
+    [self removeFromSuperview];
 }
 
 

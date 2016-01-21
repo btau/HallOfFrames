@@ -21,24 +21,24 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wQ3-Q3-HFC">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="voZ-mK-CiU">
-                                    <size key="itemSize" width="593" height="597"/>
+                                    <size key="itemSize" width="492.5" height="363"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellID" id="q4O-Ro-AFX" customClass="PictureCollectionViewCell">
-                                        <rect key="frame" x="3.5" y="0.0" width="593" height="597"/>
+                                        <rect key="frame" x="54" y="0.0" width="492.5" height="363"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="593" height="597"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="492.5" height="363"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ernieBanks" translatesAutoresizingMaskIntoConstraints="NO" id="uBv-zu-fj6">
-                                                    <rect key="frame" x="108.5" y="73.5" width="375" height="450"/>
+                                                    <rect key="frame" x="111" y="34" width="271" height="296"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="375" id="M9g-Vq-gDL"/>
-                                                        <constraint firstAttribute="height" constant="450" id="N5h-Tv-btG"/>
+                                                        <constraint firstAttribute="width" constant="271" id="M9g-Vq-gDL"/>
+                                                        <constraint firstAttribute="height" constant="296" id="N5h-Tv-btG"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
@@ -67,6 +67,9 @@
                             <constraint firstItem="wQ3-Q3-HFC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="a06-T5-XOh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="wQ3-Q3-HFC" id="nyb-Vr-xpI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

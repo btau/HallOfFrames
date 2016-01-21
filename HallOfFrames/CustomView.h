@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class CustomView;
+
 @protocol CustomViewDelegate <NSObject>
 
-- (void)pictureCollectionViewCell:(id)cell didTapButton:(UIButton *)button;
+- (void)customView:(UIView *)view didTapButton:(UIButton *)button;
 
 @end
 
